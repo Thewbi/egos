@@ -5,6 +5,8 @@
 #include <string.h>  // for strlen() and strcat()
 #include <stdlib.h>  // for itoa()
 #include <stdarg.h>  // for va_start(), va_end() and va_arg()
+
+// https://www.ijs.si/software/snprintf/
 #include "snprintf.h"
 
 void terminal_write(const char *str, int len) {
