@@ -2,7 +2,8 @@
 # All rights reserved.
 
 #prefix		= C:/SysGCC/risc-v/bin/riscv64-unknown-elf
-prefix 		= C:/Users/lapto/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf
+#prefix 		= C:/Users/lapto/Downloads/xpack-riscv-none-elf-gcc-14.2.0-3-win32-x64/xpack-riscv-none-elf-gcc-14.2.0-3/bin/riscv-none-elf
+prefix 		= riscv-none-elf
 
 QEMU        = qemu-system-riscv32
 RISCV_CC    = $(prefix)-gcc

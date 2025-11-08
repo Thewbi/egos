@@ -31,6 +31,12 @@ void format_to_str(char* out, const char* fmt, va_list args) {
 }
 
 int format_to_str_len(const char* fmt, va_list args) {
+	// https://cboard.cprogramming.com/c-programming/136741-how-find-out-length-printf-before-its-printed.html
+	// C99 compliant snprintf will accept NULL as buffer. and return the number of characters that would have been written.
+	//
+	// https://stackoverflow.com/questions/514870/is-there-any-way-to-determine-how-many-characters-will-be-written-by-sprintf
+	// What this means is that you can call snprintf with a size of 0. Nothing will get written, and the return value will tell 
+	// you how much space you need to allocate to your string:
 	return snprintf(NULL, 0, fmt, args);
 }
 
